@@ -5,8 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "tab_user")
 public class User {
     @Id                                                     // Identidica qual atributo será definido como "id" no banco de dados
     @GeneratedValue(strategy = GenerationType.IDENTITY)     // Gerenciado de forma automatica com estratégia "INDENTIFY" (Estrutura de identificação) com ID correspodente a cada inserção
